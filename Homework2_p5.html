@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function difference(a, b) {
+            return a - b;
+        }
+
+        function divide(a, b) {
+            return a / b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "sum":
+                    return sum(arg1, arg2);
+                case "difference":
+                    return difference(arg1, arg2);
+                case "divide":
+                    return divide(arg1, arg2);
+                case "multiply":
+                    return multiply(arg1, arg2);
+            }
+        }
+
+        alert("Cумма 10 и 5" + mathOperation(10, 5, "sum"));
+        alert("Разница 10 и 5" + mathOperation(10, 5, "difference"));
+        alert("Деление 10 на 5" + mathOperation(10, 5, "divide"));
+        alert("Умножение 10 на 5" + mathOperation(10, 5, "multiply"));
+
+    </script>
+</body>
+
+</html>
